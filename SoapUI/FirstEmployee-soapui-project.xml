@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f86e2349-5335-4e3f-983f-284e743ab1be" activeEnvironment="Default" name="FirstEmployee" soapui-version="5.1.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="17989a18-2776-4713-98ae-72561c20516f" wsaVersion="NONE" name="BasicHttpBinding_IMyService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IMyService" soapVersion="1_1" anonymous="optional" definition="http://localhost:22950/Service.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:22950/Service.svc?wsdl"><con:part><con:url>http://localhost:22950/Service.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MyService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:22950/Service.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://localhost:22950/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://localhost:22950/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FirstServer"/>
+      <xsd:import schemaLocation="http://localhost:22950/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMyService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessage"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResult"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetMax_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMax"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetMax_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetSorted_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSorted"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetSorted_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSortedResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetTopper_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopper"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetTopper_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopperResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetAllEmployees_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllEmployees"/>
+  </wsdl:message>
+  <wsdl:message name="IMyService_GetAllEmployees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllEmployeesResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IMyService">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyService/GetData" message="tns:IMyService_GetData_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyService/GetDataResponse" message="tns:IMyService_GetData_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyService/GetMessage" message="tns:IMyService_GetMessage_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyService/GetMessageResponse" message="tns:IMyService_GetMessage_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyService/GetResult" message="tns:IMyService_GetResult_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyService/GetResultResponse" message="tns:IMyService_GetResult_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMax">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyService/GetMax" message="tns:IMyService_GetMax_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyService/GetMaxResponse" message="tns:IMyService_GetMax_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSorted">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyService/GetSorted" message="tns:IMyService_GetSorted_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyService/GetSortedResponse" message="tns:IMyService_GetSorted_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopper">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyService/GetTopper" message="tns:IMyService_GetTopper_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyService/GetTopperResponse" message="tns:IMyService_GetTopper_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllEmployees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyService/GetAllEmployees" message="tns:IMyService_GetAllEmployees_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyService/GetAllEmployeesResponse" message="tns:IMyService_GetAllEmployees_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMyService" type="tns:IMyService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IMyService/GetData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessage">
+      <soap:operation soapAction="http://tempuri.org/IMyService/GetMessage" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResult">
+      <soap:operation soapAction="http://tempuri.org/IMyService/GetResult" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMax">
+      <soap:operation soapAction="http://tempuri.org/IMyService/GetMax" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSorted">
+      <soap:operation soapAction="http://tempuri.org/IMyService/GetSorted" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopper">
+      <soap:operation soapAction="http://tempuri.org/IMyService/GetTopper" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllEmployees">
+      <soap:operation soapAction="http://tempuri.org/IMyService/GetAllEmployees" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MyService">
+    <wsdl:port name="BasicHttpBinding_IMyService" binding="tns:BasicHttpBinding_IMyService">
+      <soap:address location="http://localhost:22950/Service.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:22950/Service.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://localhost:22950/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FirstServer"/>
+  <xs:import schemaLocation="http://localhost:22950/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMessageResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s" nillable="true" type="q1:Student" xmlns:q1="http://schemas.datacontract.org/2004/07/FirstServer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetResultResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMax">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ar" nillable="true" type="q2:ArrayOfint" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMaxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMaxResult" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSorted">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ar" nillable="true" type="q3:ArrayOfint" xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSortedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSortedResult" nillable="true" type="q4:ArrayOfint" xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTopper">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LS" nillable="true" type="q5:ArrayOfStudent" xmlns:q5="http://schemas.datacontract.org/2004/07/FirstServer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTopperResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTopperResult" nillable="true" type="q6:Student" xmlns:q6="http://schemas.datacontract.org/2004/07/FirstServer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllEmployees">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllEmployeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAllEmployeesResult" nillable="true" type="q7:ArrayOfEmployee" xmlns:q7="http://schemas.datacontract.org/2004/07/FirstServer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:22950/Service.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FirstServer" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/FirstServer">
+  <xs:import schemaLocation="http://localhost:22950/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+  <xs:complexType name="Student">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="M1" type="xs:int"/>
+      <xs:element minOccurs="0" name="M2" type="xs:int"/>
+      <xs:element minOccurs="0" name="M3" type="xs:int"/>
+      <xs:element minOccurs="0" name="Sid" type="xs:int"/>
+      <xs:element minOccurs="0" name="StudentName" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Student" nillable="true" type="tns:Student"/>
+  <xs:complexType name="ArrayOfStudent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Student" nillable="true" type="tns:Student"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudent" nillable="true" type="tns:ArrayOfStudent"/>
+  <xs:complexType name="ArrayOfEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Employee" nillable="true" type="tns:Employee"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployee" nillable="true" type="tns:ArrayOfEmployee"/>
+  <xs:complexType name="Employee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="BusinessEntityID" type="xs:int"/>
+      <xs:element minOccurs="0" name="CurrentFlag" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="HireDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="NationalIDNumber" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="OrganizationLevel" type="xs:int"/>
+      <xs:element minOccurs="0" name="OrganizationNode" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="RowGuid" type="ser:guid"/>
+      <xs:element minOccurs="0" name="SalariedFlag" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SickLeaveHours" type="xs:int"/>
+      <xs:element minOccurs="0" name="VacationHours" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Employee" nillable="true" type="tns:Employee"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:22950/Service.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:22950/Service.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <xs:complexType name="ArrayOfint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="int" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfint" nillable="true" type="tns:ArrayOfint"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:22950/Service.svc</con:endpoint></con:endpoints><con:operation id="02e09248-4f33-4953-97b6-8f53b8379a21" isOneWay="false" action="http://tempuri.org/IMyService/GetAllEmployees" name="GetAllEmployees" bindingOperationName="GetAllEmployees" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e2c08b1f-c24b-4aad-9567-40d325df4b1e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:22950/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetAllEmployees/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IMyService/GetAllEmployees"/></con:call></con:operation><con:operation id="d1b3a78f-a99e-4f8d-83e5-e9aa39465747" isOneWay="false" action="http://tempuri.org/IMyService/GetData" name="GetData" bindingOperationName="GetData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dd38a9cd-849e-44ac-8a0e-af6ae977e120" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:22950/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetData/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IMyService/GetData"/></con:call></con:operation><con:operation id="19396289-8e82-4470-b718-eacb40c6ace7" isOneWay="false" action="http://tempuri.org/IMyService/GetMax" name="GetMax" bindingOperationName="GetMax" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f28a58b0-2681-43ee-b04d-6637b676cac9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:22950/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetMax>\r
+         <!--Optional:-->\r
+         <tem:ar>\r
+            <!--Zero or more repetitions:-->\r
+            <arr:int>?</arr:int>\r
+         </tem:ar>\r
+      </tem:GetMax>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IMyService/GetMax"/></con:call></con:operation><con:operation id="0543805b-3399-43e2-a11a-6f4fe43d061f" isOneWay="false" action="http://tempuri.org/IMyService/GetMessage" name="GetMessage" bindingOperationName="GetMessage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d6e93e2d-6cc0-460b-97d0-cf16cef5a90e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:22950/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetMessage>\r
+         <!--Optional:-->\r
+         <tem:name>?</tem:name>\r
+      </tem:GetMessage>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IMyService/GetMessage"/></con:call></con:operation><con:operation id="c2e124fa-88ad-4837-acc1-a55013f22f51" isOneWay="false" action="http://tempuri.org/IMyService/GetResult" name="GetResult" bindingOperationName="GetResult" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="25dcd092-e904-4c2e-a32c-25eb26d80194" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:22950/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:fir="http://schemas.datacontract.org/2004/07/FirstServer">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetResult>\r
+         <!--Optional:-->\r
+         <tem:s>\r
+            <!--Optional:-->\r
+            <fir:M1>?</fir:M1>\r
+            <!--Optional:-->\r
+            <fir:M2>?</fir:M2>\r
+            <!--Optional:-->\r
+            <fir:M3>?</fir:M3>\r
+            <!--Optional:-->\r
+            <fir:Sid>?</fir:Sid>\r
+            <!--Optional:-->\r
+            <fir:StudentName>?</fir:StudentName>\r
+         </tem:s>\r
+      </tem:GetResult>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IMyService/GetResult"/></con:call></con:operation><con:operation id="cdac964a-071a-4fb6-b116-600e1d8b6e17" isOneWay="false" action="http://tempuri.org/IMyService/GetSorted" name="GetSorted" bindingOperationName="GetSorted" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9df3ff6e-da69-4bd6-8315-6250fab2ad7e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:22950/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetSorted>\r
+         <!--Optional:-->\r
+         <tem:ar>\r
+            <!--Zero or more repetitions:-->\r
+            <arr:int>?</arr:int>\r
+         </tem:ar>\r
+      </tem:GetSorted>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IMyService/GetSorted"/></con:call></con:operation><con:operation id="714fa07e-291c-4c6e-9b4b-881d3ba8ef5f" isOneWay="false" action="http://tempuri.org/IMyService/GetTopper" name="GetTopper" bindingOperationName="GetTopper" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d20571f7-d0c5-47cd-b3d0-122bb078d074" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:22950/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:fir="http://schemas.datacontract.org/2004/07/FirstServer">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetTopper>\r
+         <!--Optional:-->\r
+         <tem:LS>\r
+            <!--Zero or more repetitions:-->\r
+            <fir:Student>\r
+               <!--Optional:-->\r
+               <fir:M1>?</fir:M1>\r
+               <!--Optional:-->\r
+               <fir:M2>?</fir:M2>\r
+               <!--Optional:-->\r
+               <fir:M3>?</fir:M3>\r
+               <!--Optional:-->\r
+               <fir:Sid>?</fir:Sid>\r
+               <!--Optional:-->\r
+               <fir:StudentName>?</fir:StudentName>\r
+            </fir:Student>\r
+         </tem:LS>\r
+      </tem:GetTopper>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IMyService/GetTopper"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

@@ -1,0 +1,22 @@
+﻿Installing assembly 'D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.InstallLog
+   assemblypath = D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.exe
+Installing service Service1...
+Service Service1 has been successfully installed.
+Creating EventLog source Service1 in log Application...
+Committing assembly 'D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.InstallLog
+   assemblypath = D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.exe
+Uninstalling assembly 'D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.InstallLog
+   assemblypath = D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.exe
+Removing EventLog source Service1.
+Service Service1 is being removed from the system...
+Service Service1 was successfully removed from the system.
+Attempt to stop service Service1.

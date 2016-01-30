@@ -1,0 +1,6 @@
+D:\study\WCFWPF\MulServiceLibrary\MulServiceLibrary\bin\Debug\MulServiceLibrary.dll.config
+D:\study\WCFWPF\MulServiceLibrary\MulServiceLibrary\bin\Debug\MulServiceLibrary.dll
+D:\study\WCFWPF\MulServiceLibrary\MulServiceLibrary\bin\Debug\MulServiceLibrary.pdb
+D:\study\WCFWPF\MulServiceLibrary\MulServiceLibrary\obj\Debug\MulServiceLibrary.csprojResolveAssemblyReference.cache
+D:\study\WCFWPF\MulServiceLibrary\MulServiceLibrary\obj\Debug\MulServiceLibrary.dll
+D:\study\WCFWPF\MulServiceLibrary\MulServiceLibrary\obj\Debug\MulServiceLibrary.pdb

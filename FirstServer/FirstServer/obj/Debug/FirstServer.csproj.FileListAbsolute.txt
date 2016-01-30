@@ -1,0 +1,6 @@
+D:\study\WCFWPF\FirstServer\FirstServer\bin\Debug\FirstServer.dll.config
+D:\study\WCFWPF\FirstServer\FirstServer\bin\Debug\FirstServer.dll
+D:\study\WCFWPF\FirstServer\FirstServer\bin\Debug\FirstServer.pdb
+D:\study\WCFWPF\FirstServer\FirstServer\obj\Debug\FirstServer.csprojResolveAssemblyReference.cache
+D:\study\WCFWPF\FirstServer\FirstServer\obj\Debug\FirstServer.dll
+D:\study\WCFWPF\FirstServer\FirstServer\obj\Debug\FirstServer.pdb

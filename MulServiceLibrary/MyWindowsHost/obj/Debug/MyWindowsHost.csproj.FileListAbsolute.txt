@@ -1,0 +1,10 @@
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.exe.config
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.exe
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MyWindowsHost.pdb
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MulServiceLibrary.dll
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\bin\Debug\MulServiceLibrary.pdb
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\obj\Debug\MyWindowsHost.csprojResolveAssemblyReference.cache
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\obj\Debug\MyWindowsHost.exe
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\obj\Debug\MyWindowsHost.pdb
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\obj\Debug\MyWindowsHost.ProjectInstaller.resources
+D:\study\WCFWPF\MulServiceLibrary\MyWindowsHost\obj\Debug\MyWindowsHost.csproj.GenerateResource.Cache

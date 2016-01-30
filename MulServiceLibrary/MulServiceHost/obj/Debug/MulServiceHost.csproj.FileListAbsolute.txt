@@ -1,0 +1,8 @@
+D:\study\WCFWPF\MulServiceLibrary\MulServiceHost\bin\MulServiceHost.dll.config
+D:\study\WCFWPF\MulServiceLibrary\MulServiceHost\bin\MulServiceHost.dll
+D:\study\WCFWPF\MulServiceLibrary\MulServiceHost\bin\MulServiceHost.pdb
+D:\study\WCFWPF\MulServiceLibrary\MulServiceHost\bin\MulServiceLibrary.dll
+D:\study\WCFWPF\MulServiceLibrary\MulServiceHost\bin\MulServiceLibrary.pdb
+D:\study\WCFWPF\MulServiceLibrary\MulServiceHost\obj\Debug\MulServiceHost.csprojResolveAssemblyReference.cache
+D:\study\WCFWPF\MulServiceLibrary\MulServiceHost\obj\Debug\MulServiceHost.dll
+D:\study\WCFWPF\MulServiceLibrary\MulServiceHost\obj\Debug\MulServiceHost.pdb

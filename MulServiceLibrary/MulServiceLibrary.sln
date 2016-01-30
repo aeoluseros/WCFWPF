@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulServiceLibrary", "MulServiceLibrary\MulServiceLibrary.csproj", "{8FDFAC79-927D-4965-85ED-7D2261908463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulServiceHost", "MulServiceHost\MulServiceHost.csproj", "{7BE405B2-7136-4C15-B86B-A716524C91D0}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MulServiceClient", "..\MulServiceClient\", "{417C071A-AE1E-4C84-A8AF-97F032556051}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_14227"
+		Debug.AspNetCompiler.PhysicalPath = "..\MulServiceClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14227\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_14227"
+		Release.AspNetCompiler.PhysicalPath = "..\MulServiceClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14227\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "14227"
+		SlnRelativePath = "..\MulServiceClient\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{91C86212-3958-4D57-992E-CCBC4D572CCD} = {91C86212-3958-4D57-992E-CCBC4D572CCD}
+		{7BE405B2-7136-4C15-B86B-A716524C91D0} = {7BE405B2-7136-4C15-B86B-A716524C91D0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{834ACE11-A596-4CFE-BBE9-C96E72633042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsHost", "MyWindowsHost\MyWindowsHost.csproj", "{B05BEE08-06A0-4FC6-A6BF-9259A571C941}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyHostOnIIS10", "http://localhost/MyHostOnIIS10", "{91C86212-3958-4D57-992E-CCBC4D572CCD}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		ProjectReferences = "{8fdfac79-927d-4965-85ed-7d2261908463}|MulServiceLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/MyHostOnIIS10"
+		Debug.AspNetCompiler.PhysicalPath = "C:\inetpub\wwwroot\MyHostOnIIS10\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MyHostOnIIS10\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MyHostOnIIS10"
+		Release.AspNetCompiler.PhysicalPath = "C:\inetpub\wwwroot\MyHostOnIIS10\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MyHostOnIIS10\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "C:\inetpub\wwwroot\MyHostOnIIS10\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FDFAC79-927D-4965-85ED-7D2261908463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDFAC79-927D-4965-85ED-7D2261908463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDFAC79-927D-4965-85ED-7D2261908463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDFAC79-927D-4965-85ED-7D2261908463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE405B2-7136-4C15-B86B-A716524C91D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE405B2-7136-4C15-B86B-A716524C91D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE405B2-7136-4C15-B86B-A716524C91D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE405B2-7136-4C15-B86B-A716524C91D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{417C071A-AE1E-4C84-A8AF-97F032556051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417C071A-AE1E-4C84-A8AF-97F032556051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417C071A-AE1E-4C84-A8AF-97F032556051}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{417C071A-AE1E-4C84-A8AF-97F032556051}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{834ACE11-A596-4CFE-BBE9-C96E72633042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{834ACE11-A596-4CFE-BBE9-C96E72633042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{834ACE11-A596-4CFE-BBE9-C96E72633042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{834ACE11-A596-4CFE-BBE9-C96E72633042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05BEE08-06A0-4FC6-A6BF-9259A571C941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05BEE08-06A0-4FC6-A6BF-9259A571C941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05BEE08-06A0-4FC6-A6BF-9259A571C941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05BEE08-06A0-4FC6-A6BF-9259A571C941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C86212-3958-4D57-992E-CCBC4D572CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C86212-3958-4D57-992E-CCBC4D572CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C86212-3958-4D57-992E-CCBC4D572CCD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C86212-3958-4D57-992E-CCBC4D572CCD}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
