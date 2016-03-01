@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeFirstExistingDatabase {
+namespace LINQ_Queries {
     class Program {
         static void Main(string[] args) {
-            
         }
     }
 }

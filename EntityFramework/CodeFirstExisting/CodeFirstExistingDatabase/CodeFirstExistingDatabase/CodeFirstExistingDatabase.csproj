@@ -88,6 +88,14 @@
     <Compile Include="Migrations\201602260756449_DeleteCategoriesTable.Designer.cs">
       <DependentUpon>201602260756449_DeleteCategoriesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201602271933108_TestSeedMethodInsertIntoAuthorTableWithSeedMethod.cs" />
+    <Compile Include="Migrations\201602271933108_TestSeedMethodInsertIntoAuthorTableWithSeedMethod.Designer.cs">
+      <DependentUpon>201602271933108_TestSeedMethodInsertIntoAuthorTableWithSeedMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602280409018_MakeDescriptionInCoursesTableRequired.cs" />
+    <Compile Include="Migrations\201602280409018_MakeDescriptionInCoursesTableRequired.Designer.cs">
+      <DependentUpon>201602280409018_MakeDescriptionInCoursesTableRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
@@ -122,6 +130,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201602260756449_DeleteCategoriesTable.resx">
       <DependentUpon>201602260756449_DeleteCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602271933108_TestSeedMethodInsertIntoAuthorTableWithSeedMethod.resx">
+      <DependentUpon>201602271933108_TestSeedMethodInsertIntoAuthorTableWithSeedMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602280409018_MakeDescriptionInCoursesTableRequired.resx">
+      <DependentUpon>201602280409018_MakeDescriptionInCoursesTableRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

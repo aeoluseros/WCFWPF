@@ -15,6 +15,12 @@ namespace CodeFirstExistingDatabase {
         //public virtual DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder) {
+            //we can change method calls here and that's why this style is called fluent API because it's have a fluent style.
+            modelBuilder.Entity<Course>()
+                .Property(t => t.Description)
+                .IsRequired();
+
+            //two exmaple of Fluent API
             modelBuilder.Entity<Author>()
                 .HasMany(e => e.Courses)
                 .WithOptional(e => e.Author)
